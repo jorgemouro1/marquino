@@ -1,0 +1,60 @@
+li:first-child {
+  font-weight: bold;
+}
+li:last-child{
+  font-style: italic;
+}
+li:nth-child(even){
+  color:red;
+}
+a:link{
+  text-decoration: none;
+  color: #1098ad;
+}
+a:visited{
+  color:#1027ad;
+}
+a:hover{
+  font-weight:bold;
+  color:orangered;
+}
+a:active{
+  background-color: black;
+  font-style: italic;
+}
+nav a{
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:last-child{
+  margin-right: 0;
+}
+h1::first-letter{
+  font-style: normal;
+  margin-right: 5px;
+}
+h2::before{
+  content: "TOP";
+  background-color: yellow;
+  padding: 10px;
+}
+#beneath{
+  width: 100%;
+}
+body{
+  margin: 0 auto;
+  max-width: 800px;
+}
+button{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+aside{
+  background-color: rgb(236, 230, 230);
+  padding: 10px;
+  margin: 10px;
+  border-top: 7px solid #1027ad;
+  border-bottom: 7px solid #1027ad ;
+}

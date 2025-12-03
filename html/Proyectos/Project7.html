@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Fill your CV</h1>
+    <fieldset>
+        <legend>Personal data</legend>
+    <form action="">
+        <label for="provincia">Provincia</label><br>
+        <select id="provincia" name="provincia">
+            <option value="select">--Select--</option>
+            <option value="coruña">A Coruña</option>
+            <option value="lugo">Lugo</option>
+            <option value="Ourense">Ourense</option>
+            <option value="Pontevedra">Pontevedra</option>
+        </select><br><br>
+
+        <label for="data">Date of birth</label><br>
+        
+        <input type="number" name="numerodia" id="data" min="1"> 
+        
+        <label for="mes">of</label>
+        <select name="mes" id="mes">
+            <option value="January" selected>January</option>
+            <option value="February">February</option>
+        </select>
+
+        <label for="ano">of</label>
+        <input type="number" name="numeroano" id="ano" min="1"><br><br>
+
+        <label for="area">Topic of interest</label><br>
+        <select name="topics" id="area" size="5">
+            <option value="data">Database and administration</option>
+            <option value="data">Analysis and programming</option>
+            <option value="data">Architecture</option>
+            <option value="data">Quality</option>
+            <option value="data">ERP, CRM, Business intelligence </option>
+            <option value="data">Maths </option>
+        </select>
+    </form>  
+    </fieldset>
+</body>
+</html>

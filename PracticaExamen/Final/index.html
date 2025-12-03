@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="procesa.php" method="post" class="principal">
+        <div class="name">
+            <label for="name">Name: </label>
+            <input type="text" required name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" autofocus>
+        </div>
+        <div class="asignaturas">
+            <label for="subject">Subject</label>
+            <select name="subject" multiple>
+                <option>LMSXI</option>
+                <option>Programacion</option>
+                <option>Redes</option>
+                <option>BBDD</option>
+                <option>Sistemas</option>
+                <option>FOL</option>
+                <option>Web</option>
+            </select>
+        </div>
+        <div class="botons">
+            <input type="submit" value="Submit" class="boton">
+            <input type="reset" value="Reset" class="boton">
+        </div>
+    </form>
+    <footer>
+        <h1><a class="registration" href="#">Registration</a> Form</h1>
+    </footer>
+</body>
+    
+</html>

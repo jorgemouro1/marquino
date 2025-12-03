@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 3</title>
+</head>
+<body>
+    <h3>Product information</h3>
+    <form action="procesaProducto.jsp" autocomplete="off" method="get">
+        <fieldset>
+            <legend>Basic information</legend>
+
+            <label for="nombre" >Name</label><br>
+            <input type="text" name="nombre" id="nombre" autofocus required><br><br>
+            
+            <label for="descripcion">Description</label><br>
+            <textarea name="descripcion" id="descripcion"></textarea><br><br>
+
+            <label for="mail">Email</label><br>
+            <input type="email" name="mail" id="mail"><br><br>
+
+            <label for="Foto">Photo</label>
+            <input type="file" id="Foto" name="Foto"><br><br>
+            
+            <input type="checkbox" id="casilla" name="casilla">
+            <label for="casilla">Add visit counter</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Economic information</legend>
+
+            <label for="precio">Price</label>
+            <input type="number" size="1" id="precio" name="precio" required min="1" max="100">
+            <label for="tasas">€ Taxes</label>
+            <select name="tasas" id="tasas">
+                <option value="1">2%</option>
+                <option value="2" selected>4%</option>
+            </select><br><br>
+            
+            <label for="promocion">Promotion</label><br>
+
+            <input type="radio" id="none" name="promotion" value="none">
+            <label for="none">none</label><br>
+
+            <input type="radio" id="transport" name="promotion" value="transport">
+            <label for="transport">Free transport</label><br>
+
+            <input type="radio" id="discount" name="promotion" value="discount">
+            <label for="discount">5% discount</label><br><br>
+
+            <label for="position">Position</label><br>
+            <input list="positions" name="position" id="position">
+                <datalist id="positions">
+                    <option value="xerente"></option>
+                    <option value="analista"></option>
+                    <option value="programador"></option>
+                    <option value="técnico"></option>
+                </datalist>
+        </fieldset>
+
+        <input type="submit" value="Send data">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+</html>

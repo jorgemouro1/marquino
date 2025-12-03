@@ -1,0 +1,20 @@
+1. On which elements the following CSS rules will be applied?
+
+        p#aviso { ... }         Aplícase a unha etiqueta p que teña o id="aviso".
+
+        p #aviso { ... }         Aplícase a aqueles que teñan id="aviso", sempre que estén dentro dun p.
+
+        p, #aviso { ... }         Aplícase a todos os p e todos os id="aviso"
+
+
+
+
+2, On which elements the following CSS rules will be applied?
+
+        p.aviso { ... }         Aplícase a unha etiqueta p que teña a class="aviso".
+
+        p .aviso { ... }         Aplícase a aqueles que teñan class="aviso", sempre que estén dentro dun p.
+
+        p, .aviso { ... }         Aplícase a todos os p e todas as class="aviso".
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Information</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+  <h1>Personal Information Form</h1>
+  <form action="form.php" class="grid-form">
+    <label for="name"  >Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="Sex">Sex</label>
+    <div class="radio-group">
+      <div class="radio-el">
+        <input type="radio" id="male" name="Sex" value="male">
+        <label for="male">Male</label>
+      </div>
+      <div class="radio-el">
+        <input type="radio" id="female" name="Sex" value="female">
+        <label for="female">Female</label>
+      </div>
+      <div class="radio-el">
+        <input type="radio" id="other" name="Sex" value="other">
+        <label for="other">Other</label>
+      </div>
+
+    </div>
+
+    <label for="Hobby">Hobby</label>
+    <select name="Hobby" id="Hobby">
+      <option value="">Select a hobby</option>
+      <option value="fortnite">Fortnite</option>
+      <option value="clash royale">Clash Royale</option>
+      <option value="golf">Golf</option>
+      <option value="gym">Gym</option>
+    </select>
+
+    <label for="Description">Description</label>
+    <textarea name="Description" id="Description" rows="10" cols="45" placeholder="Write something about yourself..."></textarea>
+    <input type="submit" class="botonSubmit">
+  </form>
+  
+</body>
+</html>

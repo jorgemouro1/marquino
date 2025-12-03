@@ -1,0 +1,28 @@
+1. If we have the following CSS rule:
+
+      p a {color: red;}
+
+And the following HTML code:
+
+      <p><a href="#">Enlace</a></p>
+
+      <p><span><a href="#">Enlace</a></span></p>
+
+Explain how the output on the screen will be.
+
+Aplicaríaselle o estilo a ambos enlaces, xa que é unha <a> dentro dun p, que é o que especifica o estilo.
+
+
+2. If we have the following CSS rule:
+
+      p * a {color: red;}
+
+And the following HTML code:
+
+      <p><a href="#">Enlace</a></p>
+
+      <p><span><a href="#">Enlace</a></span></p>
+
+Explain how the output on the screen will be.
+
+Neste caso aplicaríaselle sóamente ao segundo, xa que o estilo especifica que debe haber algo entre o <p> e o <a> para poder aplicarllo.

@@ -1,0 +1,54 @@
+1. Using the following CSS rule:
+
+      p > span { color: green; }
+
+And the following HTML code:
+
+      <p><span>Texto1</span></p>
+
+      <p><a href="#"><span>Texto2</span></a></p>
+
+Explain what will be the screen output.
+
+
+Segundo o estilo que se nos dá, aplícaselle só á primeira liña, xa que funciona só en <span> precedidos de <p>, e o que fai e cambiar a cor a verde.
+
+
+
+
+2. Using the following CSS rule:
+
+      p a { color: red; }
+
+And the following HTML code:
+
+      <p><a href="#">Enlace1</a></p>
+
+      <p><span><a href="#">Enlace2</a></span></p>
+
+      <p><a href="#"><span>Texto2</span></a></p>
+
+Explain what will be the screen output.
+
+Aplícase a todos os <a> que están dentro dunha etiqueta <p>, entón aplícaselle a todos. O que fai é cambiar a cor a vermello.
+
+
+
+
+
+3. Using the following CSS rule:
+
+      p > a { color: red; }
+
+And the following HTML code:
+
+      <p><a href="#">Enlace1</a></p>
+
+      <p><span><a href="#">Enlace2</a></span></p>
+
+      <p><a href="#"><span>Texto2</span></a></p>
+
+Explain what will be the screen output.
+
+Aplícase ao 1º e ao 3º, xa que só se aplica aos <a> que van directamente precedidos dun <p>. O que fai e cambiar a cor a vermello.
+

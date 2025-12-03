@@ -1,0 +1,26 @@
+ul{
+    padding: 0px;
+    border: 1px solid black;
+    margin: 0px;
+    list-style-position: inside;
+    border-bottom: none;
+    list-style: none;
+    width: 180px;
+}
+
+ul li{
+    border-bottom: 1px solid black;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    background: url("img/flecha_inactiva.png") no-repeat 5px;
+    padding: 0.2em;
+    padding-left: 1.5em;
+}
+
+ul li a:hover{
+    background: #e4e4e4 url("img/flecha_activa.png") no-repeat 5px;
+}

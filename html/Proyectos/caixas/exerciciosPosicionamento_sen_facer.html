@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flotar e Posicionar</title>
+	<style type="text/css">
+		body {
+				font-weight: bold;
+				color: white;
+		}
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		#contenedor {
+			width: 90%; 
+			margin: auto; 
+			padding: 10px; 
+			border: solid 1px black; 
+			background-color: #CCCCAA;
+
+			}
+		#contido1 {
+			width: 500px; 
+			margin: 10px 30px; 
+			border: solid 1px black; 
+			background-color: #CCCCCC; 
+			float:left;
+			width: 700px;
+			
+			}
+		#contido2 {
+			width: 650px; 
+			margin: 10px 30px; 
+			padding: 10px; 
+			border: solid 1px black; 
+			background-color: #CCAAAA;
+			float:left;
+			width: 700px;
+			visibility: hidden;
+
+			}
+		#caixa11 { 
+			width: 100px; 
+			height: 100px; 
+			background-color:#FF0000; 
+			border: solid 1px black; 
+			margin: 10px;
+			float:right;
+			
+			}
+		#caixa12 { 
+			width: 130px; 
+			height: 130px; 
+			background-color:#00FF00; 
+			border: solid 1px black; 
+			margin: 10px;
+			float:right;
+
+			}
+		#caixa13 { 
+			width: 160px; 
+			height: 160px; 
+			background-color:#0000FF; 
+			border: solid 1px black; 
+			margin: 10px; 
+			float: right;
+
+			}
+		.caixa21 { 
+			width: 100px; 
+			height: 100px; 
+			background-color:#FF0000; 
+			border: solid 1px black; 
+			float: left;
+
+			
+			}
+		.caixa22 { 
+			width: 130px; 
+			height: 130px; 
+			background-color:#00FF00; 
+			border: solid 1px black; 
+			margin: 10px; 
+			float: left;
+			}
+		.caixa23 { 
+			width: 160px; 
+			height: 160px; 
+			background-color:#0000FF; 
+			border: solid 1px black; 
+			margin: 10px; 
+			float: left;
+			}
+
+			#contido1::after{
+				content: "";
+				clear: both;
+				display: table;	
+			}
+			#contido2::after{
+				content: "";
+				clear: both;
+				display: table;	
+			}
+			#contenedor::after{
+				content: "";
+				clear: both;
+				display: table;	
+			}
+	</style>
+
+</head>
+
+<body>
+  <div id="contenedor" >
+   <div id="contido1" >
+        <div id="caixa11"> Caixa 11 </div>
+        <div id="caixa12"> Caixa 12 </div>
+        <div id="caixa13"> Caixa 13 </div>
+        <div class="baleira"> </div>
+    </div>
+   <div id="contido2" >
+        <div class="caixa21"> Caixa 21 </div>
+        <div class="caixa22"> Caixa 22 </div>
+        <div class="caixa23"> Caixa 23 </div>
+		<div class="baleira"> </div>
+   </div>
+  
+  </div> <!-- contenedor -->
+</body>
+</html>
+

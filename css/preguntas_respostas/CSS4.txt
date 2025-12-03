@@ -1,0 +1,33 @@
+Write the following selectors. 
+
+1. Selector that selects all images in the document.
+
+2. Selector that selects all hyperlinks in the document.
+
+3. Selector that selects all inputs in the document.
+
+4. Selector that selects links contained within ordered lists.
+
+5. Selector that selects form labels.
+
+6. Selector that selects the object with ID paragrPrincipal.
+
+7. Selector that selects the object with ID radioButton.
+
+8. Selector that selects the image with ID fondo.
+
+9. Selector that selects an unordered list that uses the class listaPrincipal.
+
+10. Selector that selects all TR and all input.
+
+
+1. img 
+2. a 
+3. input
+4. ol a 
+5. label 
+6. #paragrPrincipal
+7. #radioButton
+8. img#fondo
+9. ul.listaPrincipal
+10.tr,input

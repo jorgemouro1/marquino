@@ -1,0 +1,13 @@
+Indicate which one is the selector of the following CSS rule and explain what it does.
+
+
+p a span em { text-decoration: underline; }
+Pon unha liña por debaixo do texto dos elementos que teñan unha etiqueta <em>, dentro dun <span>, á súa vez dentro dun <a>, á súa vez dentro dun <p>.
+O selector é "p a span em"
+ 
+
+
+
+p, a, span, em { text-decoration: underline; }
+Pon unha liña por debaixo dos elementos que estén ou ben dentro dun <p>, ou ben dentro dun <a>, ou ben dentro dun <span>, ou ben dentro dun <em>.
+Os selectores son p,a,span e em.

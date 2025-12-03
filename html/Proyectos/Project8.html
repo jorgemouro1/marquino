@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 3</title>
+</head>
+<body>
+    <h3>Product information</h3>
+    <form action="">
+        <fieldset>
+            <legend>Basic information</legend>
+
+            <label for="nombre">Name</label><br>
+            <input type="text" name="nombre" id="nombre"><br><br>
+            
+            <label for="descripcion">Description</label><br>
+            <textarea name="descripcion" id="descripcion"></textarea><br><br>
+
+            <label for="Foto">Photo</label>
+            <input type="file" id="Foto" name="Foto"><br><br>
+            
+            <input type="checkbox" id="casilla" name="casilla">
+            <label for="casilla">Add visit counter</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Economic information</legend>
+
+            <label for="precio">Price</label>
+            <input type="number" size="1" id="precio" name="precio">
+            <label for="tasas">€ Taxes</label>
+            <select name="tasas" id="tasas">
+                <option value="1">2%</option>
+                <option value="2" selected>4%</option>
+            </select><br><br>
+            
+            <label for="promocion">Promotion</label><br>
+
+            <input type="radio" id="none" name="promotion" value="none">
+            <label for="none">none</label><br>
+
+            <input type="radio" id="transport" name="promotion" value="transport">
+            <label for="transport">Free transport</label><br>
+
+            <input type="radio" id="discount" name="promotion" value="discount">
+            <label for="discount">5% discount</label><br>
+
+        </fieldset>
+    </form>
+</body>
+</html>

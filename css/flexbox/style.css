@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+ a{
+  background-color: black;
+  padding:0px;
+  margin:0px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  flex-basis: 25%;
+
+}
+
+.primeiro{
+  background-color: rgb(38, 199, 38);
+}
+nav{
+  position: sticky;
+  top: 0;  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width:450px) {
+  nav{
+    flex-direction:column;
+  }
+}
