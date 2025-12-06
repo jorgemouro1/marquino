@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#333333;
+    color: white;
+    padding: 1rem;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+body{
+    background-color:#F7F7F7 ;
+
+}
+
+.principal{
+    background-color: white;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+    row-gap: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.principal h2{
+    grid-column: 1/3;
+    text-align: center;
+}
+.principal button{
+    padding: 1rem;
+    cursor: pointers;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+
+}
+.principal div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.email{
+    grid-column: 1/3;
+
+}
+.msg{
+    grid-column: 1/3;
+}
+.boton{
+    grid-column: 1/3;
+}
+
+@media screen and (max-width:500px) {
+    .principal{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+    }
+    .email,.msg,.boton,.principal h2{
+        grid-column: auto;
+    }
+
+}
