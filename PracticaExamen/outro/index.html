@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="procesa.php" method="post">
+        <div class="primeiro">
+            <label for="name" id="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="correo" id="correo">Email: </label>
+            <input type="email" name="correo" id="correo" autofocus>
+        </div>
+
+        <div class="subject">
+            <label for="subject" id="subject">Subjects</label>
+            <select name="subjects" id="subjects" size="7">
+                <option name="LMSXI" id="LMSXI">LMSXI</option>
+                <option name="paraninfo" id="paraninfo">Paraninfo</option>
+                <option name="FOL" id="FOL">FOL</option>
+                <option name="bases" id="bases">Bases</option>
+                <option name="ipe" id="ipe">ipe</option>
+                <option name="sistemas" id="sistemas">sistemas</option>
+                <option name="daw" id="daw">daw</option>
+            </select>
+        </div>
+
+        <div class="botons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    <footer>
+        <h1><span class="registration">Registration</span> form</h1>
+    </footer>
+
+</body>
+</html>
